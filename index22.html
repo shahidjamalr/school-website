@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+   
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   
+    <section class="header">
+        <nav>
+            <a href="#"><img src="school/logo.png" alt="School Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">ACADEMICS</a></li>
+                    <li><a href="#">FACULTY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome To Our School</h1>
+            <p>Empowering minds, shaping futures, and building character through quality education.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    
+    <section class="ACADEMICS">
+        <h1>Our Academic Programs</h1>
+        <p>We offer a comprehensive curriculum designed to foster critical thinking, creativity, and academic excellence.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Primary Education</h3>
+                <p>Building strong foundational skills in literacy, numeracy, and social interaction through engaging activities.</p>
+            </div>
+            <div class="course-col">
+                <h3>Secondary Education</h3>
+                <p>Encouraging deeper exploration of core subjects, scientific inquiry, and independent problem-solving.</p>
+            </div>
+            <div class="course-col">
+                <h3>Higher Secondary</h3>
+                <p>Specialized streams (Science, Commerce, Arts) preparing students for top universities and global careers.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="faculty">
+        <h1>Meet Our Leadership & Faculty</h1>
+        <p>Dedicated professionals committed to guiding every student toward success.</p>
+
+        <!-- Chairperson -->
+        <div class="chairperson-container">
+            <div class="chairperson-card">
+                <img src="school/chairperson.png" alt="Chairperson">
+                <h3 class="chairperson-name">Dr. John Doe</h3>
+                <h4 class="chairperson-title">Chairperson</h4>
+            </div>
+        </div>
+
+        <!-- Principal -->
+        <div class="principal-container">
+            <div class="principal-card">
+                <img src="school/principal.png" alt="Principal">
+                <h3 class="principal-name">Jane Smith</h3>
+                <h4 class="principal-title">Principal</h4>
+                <p class="principal-role">M.Ed., Ph.D. in Educational Leadership</p>
+            </div>
+        </div>
+
+        <!-- Faculty Grid -->
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="school/teacher1.png" alt="Teacher">
+                <h3>Mr. Robert Fox</h3>
+                <div class="faculty-qualificstion">M.Sc. Mathematics</div>
+                <p class="faculty-role">Senior Teacher</p>
+            </div>
+            <div class="faculty-card">
+                <img src="school/teacher2.png" alt="Teacher">
+                <h3>Ms. Emily Davis</h3>
+                <div class="faculty-qualificstion">M.A. English</div>
+                <p class="faculty-role">Head of Department</p>
+            </div>
+            <div class="faculty-card">
+                <img src="school/teacher3.png" alt="Teacher">
+                <h3>Dr. Alan Grant</h3>
+                <div class="faculty-qualificstion">Ph.D. Physics</div>
+                <p class="faculty-role">Science Faculty</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Gallery Section -->
+    <section class="gallery-section">
+        <h2>Our Achievement Gallery</h2>
+        <p class="gallery-intro">Celebrating milestones, awards, and the incredible talents of our students.</p>
+        <div class="achievement-gallery">
+            <div class="gallery-item">
+                <div class="image-wrapper">
+                    <img src="school/achievement1.png" alt="Science Fair">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>National Science Fair</h4>
+                    <p>Our students secured 1st place nationally for their innovative robotics and renewable energy model.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper">
+                    <img src="school/achievement2.png" alt="Sports Meet">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Inter-School Athletics</h4>
+                    <p>Dominating the track and field events with multiple gold and silver medals won this season.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper">
+                    <img src="school/achievement3.png" alt="Cultural Fest">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Annual Cultural Fest</h4>
+                    <p>Showcasing exceptional artistic expression, classical dance performances, and dramatic arts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
